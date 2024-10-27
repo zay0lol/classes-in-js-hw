@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hi"></h1>
+    <h1 id="hello"></h1>
+</body>
+<script>
+    class student {
+        constructor(name, age) {
+            this.name = name
+            this.age = age
+        }
+        intro() {
+            return "my name is" + this.name + "my age is" + this.age
+        }
+    }
+    var object1 = new student(
+        "zynah", 12
+    )
+    document.getElementById("hi").innerHTML = object1.intro()
+    var student2=new student("ayesha",16)
+    document.getElementById("hello").innerHTML = student2.intro()
+</script>
+</html>
